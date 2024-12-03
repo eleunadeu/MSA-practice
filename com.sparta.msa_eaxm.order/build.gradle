@@ -29,6 +29,9 @@ ext {
 }
 
 dependencies {
+	implementation 'io.github.resilience4j:resilience4j-spring-boot3:2.2.0'
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
+
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'io.micrometer:micrometer-tracing-bridge-brave'
 	implementation 'io.github.openfeign:feign-micrometer'
@@ -36,6 +39,9 @@ dependencies {
 	implementation 'io.github.resilience4j:resilience4j-spring-boot3:2.2.0'
 	implementation 'org.springframework.boot:spring-boot-starter-aop'
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+	runtimeOnly 'com.mysql:mysql-connector-j'
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'

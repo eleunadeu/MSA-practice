@@ -30,8 +30,8 @@ out/
 /com.sparta.msa_eaxm.gateway/application*.yml
 /com.sparta.msa_eaxm.order/application*.yml
 /com.sparta.msa_eaxm.product/application*.yml
+/com.sparta.msa_eaxm.config/application*.yml
 
-!/com.sparta.msa_eaxm.config/application.yml
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
