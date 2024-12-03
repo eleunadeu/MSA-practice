@@ -1,0 +1,23 @@
+server:
+  port: 18080
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+          default-label:
+          search-paths:
+          username:
+          password: ${GITHUB_ACCESS_TOKEN}
+      fail-fast: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:19090/eureka/
